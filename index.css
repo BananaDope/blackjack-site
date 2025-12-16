@@ -17,11 +17,11 @@
 .player-cards {
     white-space: pre-line;
 } */
- /* allows \n to create line breaks */
+ /* allows \n to create line breaks*/
 
 
 
-@import './fonts.css';
+@import './fonts.css'; 
 
 @import './tailwind.css';
 

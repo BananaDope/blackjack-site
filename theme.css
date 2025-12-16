@@ -125,9 +125,10 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    background-image: url("/gradient-poker-table-background_23-2151085419.avif")
+    @apply bg-background text-foreground flex flex-col justify-center items-center min-h-screen;
   }
+
+  
 
   /**
   * Default typography styles for HTML elements (h1-h4, p, label, button, input).
