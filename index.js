@@ -351,7 +351,9 @@ function houseplay()//If this has any variables that don't exist, move above sta
 
 
 function compareWinner(){
-    if (playerSums[player] > 21)
+    if (playerSums[house] > 21)
+    {end('win');} //Won game
+    else if (playerSums[player] > 21)
     {end('lose');}
     else if (playerSums[player] > playerSums[house]) //If our sum is higher.
     {end('win');} //Won game
@@ -376,68 +378,3 @@ doubleBtn.addEventListener('click', e => {
 standBtn.addEventListener('click', e => {
     stand(player);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let firstCard = 10
-// let secondCard = 11
-// let sum = firstCard + secondCard
-// let hasBlackJack = false
-// // 1. Create a variable called isAlive and assign it to true
-
-// // 2. Flip its value to false in the appropriate code block 
-// if (sum <= 20) {
-//     console.log("Do you want to draw a new card? 🙂")
-// } else if (sum === 21) {
-//     console.log("Wohoo! You've got Blackjack! 🥳")
-//     hasBlackJack = true
-// } else {
-//     console.log("You're out of the game! 😭")
-// }
-
-// // 3. Log it out to check that you're doing it right
-
-
-
-    // playerCardsHtml.forEach(element => {
-    //     let txtContFirst = element.textContent.split(" ")[0];
-    //     if (txtContFirst === "Player")//For Player:
-    //     {
-    //         element.textContent = `Player Cards: \n${playerCards[player].join("+")}. Sum:${playerSums[player]}.`;
-    //         console.log(element.textContent);
-    //     } 
-    //     else //For House:
-    //     {
-    //         element.textContent = `House Cards: \n${playerCards[house].join("+")}. Sum:${playerSums[house]}.`;
-    //         console.log(element.textContent);
-    //     };
-    // });
-    //MAKE AN ID VERSION
-    
-    
-    
-    //Add an event listener for each actBtn.
-// actBtns.forEach(element => {
-//    element.addEventListener('click', function(event) {
-//         let currentTxt = event.currentTarget.textContent;
-//         if (currentTxt == "Hit")   //Hit
-//         {
-//             //hit();
-//         }else if(currentTxt == "Double"){ //Double
-//             //Double();   
-//         }else if(currentTxt == "Stand"){ //Stand
-//             //Stand();
-//         }
-//    });
-//  });
