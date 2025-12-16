@@ -1,0 +1,89 @@
+/* Base button styles */
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 80px;
+}
+
+/* Bet buttons (positive and negative amounts) */
+.bet-btns {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #000;
+  border-color: #d97706;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 15px rgba(251, 191, 36, 0.3);
+}
+
+.bet-btns:hover:not(.inactive) {
+  background: linear-gradient(135deg, #fcd34d 0%, #fbbf24 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(251, 191, 36, 0.5);
+}
+
+.bet-btns:active:not(.inactive) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Action buttons (Hit, Double, Stand) */
+.act-btns {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #fff;
+  border-color: #047857;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+.act-btns:hover:not(.inactive) {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(16, 185, 129, 0.5);
+}
+
+.act-btns:active:not(.inactive) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Start button */
+#start-btn {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: #fff;
+  border-color: #b91c1c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 15px rgba(239, 68, 68, 0.3);
+  padding: 1rem 2.5rem;
+  min-width: 150px;
+}
+
+#start-btn:hover:not(.inactive) {
+  background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(239, 68, 68, 0.5);
+}
+
+#start-btn:active:not(.inactive) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Inactive state for all buttons */
+.button.inactive {
+  background: #4b5563 !important;
+  color: #9ca3af !important;
+  border-color: #374151 !important;
+  box-shadow: none !important;
+  cursor: not-allowed !important;
+  opacity: 0.5;
+  transform: none !important;
+}
+
+.button.inactive:hover {
+  transform: none !important;
+}
+
+/* Player cards inactive state */
+.player-cards.inactive {
+  opacity: 0.4;
+  color: #9ca3af !important;
+}

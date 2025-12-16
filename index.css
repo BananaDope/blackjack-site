@@ -1,0 +1,32 @@
+/* .inactive{
+    display: none !important; 
+}
+
+.unavailable{
+    background-color: lightgray !important;
+    cursor: not-allowed !important;
+}
+.unavailable:active{
+    box-shadow: 0 0 5px 2px red;
+}
+
+.button{
+    background-color: white;
+}
+
+.player-cards {
+    white-space: pre-line;
+} */
+ /* allows \n to create line breaks */
+
+
+
+@import './fonts.css';
+
+@import './tailwind.css';
+
+@import './theme.css';
+
+@import './buttons.css';
+
+@import './game.css'
