@@ -198,7 +198,7 @@ function end(results){
     {
         lose();
     }
-    else if (didWin === 'tie')
+    else if (results === 'tie')
     {
         //Give money back
         betFunds += betAmount;
